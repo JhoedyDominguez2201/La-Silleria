@@ -3,43 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo_jhoedy.css">    
+    <title>La silleria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo_jhoedy.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">  
 </head>
 <body>
-    <div class="headerhome">
-        <nav class="header-left home">
-            <a href="catalogo.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Catalogo</a>
-            <a href="nosotros.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Nosotros</a>
-            <a href="contactanos.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Contactanos</a>
-        </nav>
-        <a class ="titulohome" href="home.html">L a s i l l e r i a </a>
-        <a class ="iniciarsesionhome" href="iniciarsesion.html" onmouseover="this.style.color='black'" onMouseout="this.style.color='black'">Iniciar sesion</a>
-        <a class ="crearcuentahome" href="crearcuenta.html" onmouseover="this.style.color='black'" onMouseout="this.style.color='black'">Crear cuenta</a>
+     
+  <!--HEADER-->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button" aria-haspopup="true" aria-expanded="false">Catalogo</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="catalogo.html">Productos</a>
+          <a class="dropdown-item" href="#">Sillas</a>
+          <a class="dropdown-item" href="#">Mesas</a>
+          <a class="dropdown-item" href="#">Camas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactanos.html">Contactanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
+      </li>
+     </ul>
+      <a class="nav-link" href="#">Iniciar sesion</a>
+      <a class="nav-link" href="#">Crear cuenta</a>   
+  </div>
+</nav>
+  <!-- FINAL HEADER-->
+
+    <!--FORMULARIO Y MAPAS-->
+<div class="row" id="contact">
+  <div class="container mt-5" >
+  
+      <div class="row" style="height:550px;">
+        <div class="col-md-6 maps" >
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15134.701442194826!2d-88.3118400221004!3d18.49835854874946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba36994879e07%3A0xdf8b49ae9eb026d7!2sCentro%2C%2077000%20Chetumal%2C%20Q.R.!5e0!3m2!1ses-419!2smx!4v1611943329041!5m2!1ses-419!2smx" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <img class="logo" src="/fotos/WhatsApp Image 2021-01-08 at 8.11.02 PM.jpeg">
+          <h2 class="text-uppercase mt-3 font-weight-bold">CONTACTANOS</h2>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control mt-2" placeholder="Nombre" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control mt-2" placeholder="Apellido" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="email" class="form-control mt-2" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control mt-2" placeholder="Telefono" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+
+              <div class="container">
+                <p><i class="bi bi-telephone-fill"></i> <strong> Telefono:</strong> 9831256333</p>
+                <p><i class="bi bi-whatsapp"></i> <strong> WhatsApp:</strong> 9831256333</p>
+                <p><a href="https://www.facebook.com/lasilleriaMX"> <i class="bi bi-facebook"></i></a> <strong> Contactanos en Facebook:</strong> <a href="https://www.facebook.com/lasilleriaMX">lasilleriamx</a> </p>
+                <p><a href="https://www.instagram.com/la_silleria/?hl=es-la"><i class="bi bi-instagram"></i> </a><strong> Contactanos en Instagram:strong</strong> <a href="https://www.instagram.com/la_silleria/?hl=es-la">@la_silleria</a> </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+  <!--FINAL FORMULARIO Y MAPAS-->
+
+  <!--FOOTER-->
+ <footer class="bg-navbar text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+     
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+  
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
     </div>
-
-
-    <div class="info-contact">
-    <h1 class="h1-contactact">CONTACTANOS</h1>
-    <p>Siguenos o mandanos un mensaje en Facebook:</p>
-    <a href="https://www.facebook.com/lasilleriaMX/?ref=page_internal" class="link-facebook">La silleria</a>
-    <p class="p-contact">Siguenos en Instagram:</p>
-    <a href="https://www.instagram.com/la_silleria/?hl=es-la" class="link-facebook">La silleria</a>
-    </div>
-
-
-       <form class="form-contact">
-        <input type="text" class="input-contact" placeholder="Nombre" required>
-        <input type="text" class="input-contact" placeholder="Correo electronico" required>
-        <input type="text" class="input-contact" placeholder="Asunto" required>
-        <input type="text" class="input-contact" placeholder="Mensaje" required>
-        <button type="submit" class="button-submit">Enviar</button>
-       </form>
- 
-    
-    
-    
+  </div>
+</div>
+<!--FINAL FOOTER-->
+  
 </body>
 </html>

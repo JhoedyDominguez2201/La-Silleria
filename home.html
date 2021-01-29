@@ -1,32 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La silleria</title>
-    <link rel="stylesheet" href="estilo_jhoedy.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La silleria</title>
+  <link rel="stylesheet" href="estilo_jhoedy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class="headerhome">
-        <nav class="header-left home">
-            <a href="catalogo.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Catalogo</a>
-            <a href="nosotros.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Nosotros</a>
-            <a href="contactanos.html" onmouseover="this.style.color='blue'" onMouseout="this.style.color='black'">Contactanos</a>
-        </nav>
-        <a class ="titulohome" href="home.html">L a s i l l e r i a </a>
-        <a class ="iniciarsesionhome" href="iniciarsesion.html" onmouseover="this.style.color='black'" onMouseout="this.style.color='black'">Iniciar sesion</a>
-        <a class ="crearcuentahome" href="crearcuenta.html" onmouseover="this.style.color='black'" onMouseout="this.style.color='black'">Crear cuenta</a>
-    </div>
-    
-    <img class="foto1" src="fotos/120514734_2735487096723630_9182175189403699248_o.jpg">
-    <img class="foto2" src="fotos/2.jpg">
-    <img class="foto3" src="fotos/119165137_2717906028481737_8774287139868144236_o.jpg">
-    
-   
+  <!--HEADER-->
+<nav class="navbar navbar-expand-lg navbar-light" id="navb">
+  <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button" aria-haspopup="true" aria-expanded="false">Catalogo</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="catalogo.html">Productos</a>
+          <a class="dropdown-item" href="#">Sillas</a>
+          <a class="dropdown-item" href="#">Mesas</a>
+          <a class="dropdown-item" href="#">Camas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactanos.html">Contactanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
+      </li>
+     </ul>
+      <a class="nav-link" href="#">Iniciar sesion</a>
+      <a class="nav-link" href="#">Crear cuenta</a>   
+  </div>
+</nav>
+<!--FINAL HEADER-->
+
+
+<!--CAROUSEL-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/fotos/Slide3.jpg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>La Silleria</h5>
+        <p>Diseño contemporáneo-artesanal </p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="/fotos/ínk.jpg" class="d-block w-100" > 
+    </div>
+    <div class="carousel-item">
+      <img src="/fotos/19642574_1901511120121236_5119246585650492690_n.jpg" class="d-block w-100" >
+      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--FINAL CAROUSEL-->
+
+<!--FOOTER-->
+ <footer class="bg-navbar text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+     
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+  
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--FINAL FOOTER-->
 
 </body>
 </html>
