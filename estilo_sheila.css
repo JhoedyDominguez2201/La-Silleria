@@ -1,7 +1,7 @@
 html{
     background-color: #ffffff;
     position: relative;
-  min-height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -11,127 +11,71 @@ body {
 }
 
 /*HEADER PANTALLAS*/
-.headerhome {
-   
-    overflow: hidden;
-    padding: 19px;
-    text-align: center;
-    background: #ffe1a9;
-    color: rgb(56, 56, 56);
+.navbar{
+  font-family: 'Cinzel', serif;
+  background-color: #ffe1a9;
+  font-size: 20px;
 }
 
-.headerhome a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.titulohome{
-    margin: 0 0 0 17rem;
-}
-
-.iniciarsesionhome{
-    margin: 0 0 0 21rem;
+.nav-link{
+color: #000000;}
+.bg-navbar{
+  margin-top: 50px;
+  background-color: #ffe1a9;
 }
 /*FINAL HEADER*/
 
-/*Iniciar sesion*/
-.containeriniciar{
+.container{
+  margin-top: 30px;
+  font-family: 'Fraunces', serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.form-check{
+  text-align: center;
+}
+
+.btn{
+  margin-left: 500px;
+}
+
+.publicidad {
+  width: 200px;
+  margin-left: 5px;
+  margin-top: 50px;
+}
+
+/* NOTA:Considerar si ponerlo o no por estetica
+.sidebar {
+  background: #ffffff;
+  margin-top: 15px;
+  padding-top: 30px;
+  margin-left: 4px;
+  position: fixed;
+  left: 0;
+  width: 200px;
   height: 100%;
-  width: 100%;
-  margin-left: 650px;
-  background-color:#717171;
-}
-.input-group{
-top: 180px;
-position: absolute;
-width: 280px;
-transition: 0.8s;
 }
 
-.input-field{
-width: 100%;
-padding: 10px 0;
-margin: 5px 0;
-border-left: 0;
-border-right: 0;
-border-top: 0;
-border-bottom: 2px solid #000000;
-outline: none;
-background: transparent;
-} 
-/*Final Iniciar sesion*/
-/*Crear cuenta*/
-.containercrear{
-  height: 100%;
-  width: 100%;
-  margin-left: 650px;
-  background-color:#717171;
-  margin-top: 800px;
-}
-.input-group2{
-top: 180px;
-position: absolute;
-width: 280px;
-transition: 0.8s;
+.sidebar h5{
+  font-family: 'Fraunces', serif;
 }
 
-.input-field2{
-width: 100%;
-padding: 10px 0;
-margin: 5px 0;
-border-left: 0;
-border-right: 0;
-border-top: 0;
-border-bottom: 2px solid #000000;
-outline: none;
-background: transparent;
-} 
-.check-box{
-  margin: 30px 10px 30px 0;
+.sidebar .publicidad{
+  width: 170px;
+  height: 590px;
+  margin-top: 2px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: 2px;
 }
-.span{
-font-size: 12px;
+*/
+.logo{
+  width: 200px;
+  height: 150px;
+  margin-left: 40%;
 }
-.submit-button{
-  width: 50%;
-  padding: 10px 10px;
-  cursor: pointer;
-  display: block;
-  margin: auto;
-  outline: none;
-
-}
-/*Final Crear cuenta*/
-
-/*FOTOS y TEXTO PANTALLA HOME*/
-.foto1{
-    padding-left: 10px;
-    padding-top: 15px;
-    width: 500px;
-    height: 650px;
-}
-
-.foto2{
-    padding-top: 15px;
-    width: 500px;
-    height: 650px;
-}
-
-.foto3{
-    padding-top: 15px;
-    width: 493px;
-    height: 650px;
-    
-}
-
-.info{
-    text-align: center;
-    
-}
-/* FINAL FOTOS y TEXTO PANTALLA HOME*/
