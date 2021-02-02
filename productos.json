@@ -1,0 +1,54 @@
+[
+    {
+        "foto": "/fotos/product1.jpg",
+        "foto2": "/fotos/product2.jpg",
+        "nombre": "Silla azul",
+        "precio": "$200"
+    },
+    {
+        "foto": "/fotos/product2.jpg",
+        "nombre": "Silla verde",
+        "precio": "$50"
+    },
+    {
+        "foto": "/fotos/product3.jpg",
+        "nombre": "Silla roja",
+        "precio": "$800"
+    },
+    {
+        "foto": "/fotos/product4.jpg",
+        "nombre": "Silla naranja",
+        "precio": "$500"
+    },
+    {
+        "foto": "/fotos/product5.jpg",
+        "nombre": "Silla gris",
+        "precio": "$100"
+    },
+    {
+        "foto": "/fotos/product6.jpg",
+        "nombre": "Silla blanca",
+        "precio": "$300"
+    },
+    {
+        "foto": "/fotos/product1.jpg",
+        "nombre": "Silla rosada",
+        "precio": "$3200"
+    },
+    {
+        "foto": "/fotos/product2.jpg",
+        "nombre": "Silla verde",
+        "precio": "$50"
+    },
+    {
+        "foto": "/fotos/product3.jpg",
+        "nombre": "Silla roja",
+        "precio": "$800"
+    },
+    {
+        "foto": "/fotos/product4.jpg",
+        "nombre": "Silla naranja",
+        "precio": "$500"
+    }
+
+]
