@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="juan.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="juan_estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localStorage/2.0.1/localStorage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-light" id="navb">
+        <a class="navbar-brand" href="home.html">LA SILLERIA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Catalogo</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="catalogo.html">Sillas</a>
+                        <a class="dropdown-item" href="catalogo2.html">Mesas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+            <a class="nav-link" href="iniciarsesion.html">Iniciar sesion</a>
+            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+        </div>
+    </nav>
+
+    <br>
+
+
+    <footer class="darkco">
+        <div class="nosotros contenido">
+            <div class="nosotrositem">
+                <h2 id="nosotros"></h2>
+                <p id=pnosotros>
+                    Somos una tienda independiente familiar que se dedica a la venta de productos
+                    de diseño contemporaneo-artesanal via online para darle un toque especial a tu hogar.
+                    de igual manera hacemos envios a cualquier parte de la republica.
+                </p>
+
+                <br>
+                <h2>conoce al equipo de la silleria</h2>
+                <div class="persona">
+                    <div class="personadato">
+                        <img src="/fotos/empleado1.jpg" alt="">
+                        <p id="persona1" onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
+                    </div>
+                    <div class="personadato">
+                        <img src="/fotos/jefe.jpg" alt="">
+                        <p id="jefe" onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
+                    </div>
+                    <div class="personadato">
+                        <img src="/fotos/empleado2.jpg" alt="">
+                        <p id="persona2" onmouseover="style.color='red'" onmouseout="style.color='black'"></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <h2 id=dat>si desea conoces mas de los integrantes del equipo de click en su nombre</h2>
+        <!-- inicio datos ocultos -->
+
+        <div id="datos">
+            <div id="datoss">
+
+                <div>
+                    <img src="/fotos/empleado1.jpg" alt="">
+                </div>
+                <div>
+
+                    <p id="puesto"></p>
+                    <p id="nombre"></p>
+                    <p id="apellido"></p>
+                    <p id="edad"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="datos2">
+            <div id="datoss22">
+
+                <div>
+                    <img src="/fotos/jefe.jpg" alt="">
+                </div>
+                <div>
+                    <p id="puesto2"></p>
+                    <p id="nombre2"></p>
+                    <p id="apellido2"></p>
+                    <p id="edad2"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="datos3">
+            <div id="datoss33">
+
+                <div>
+                    <img src="/fotos/empleado2.jpg" alt="">
+                </div>
+                <div>
+                    <p id="puesto3"></p>
+                    <p id="nombre3"></p>
+                    <p id="apellido3"></p>
+                    <p id="edad3"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- final datos ocultos  -->
+
+        <div class="productocontenido">
+            <br>
+            <h2>NUESTRO PRODUCTO</h2>
+            <br>
+            <div class="productositem">
+
+                <div>
+                    <img src="/fotos/empleado1.jpg" alt="">
+                </div>
+                <div>
+                    <p>Todos nuestros productos estan hechos con hilo de plastico ya que el hilo de plastigo
+                        es un material muy resistente y estos tardan en degradarse mucho tiempo, por lo cual
+                        consideramos que es un material muy util para la construccion de muebles rusticos.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="productositem2">
+                <div>
+                    <p>
+                        Para nuestros productos las bases que usamos para nuestros muebles son de madera y de herreria
+                        ya que este tipo de material tarma demasiado tiempo en degradarse; ademas estos materiales son
+                        muy resistentes y pueden soportar mucho para cualquier tipo de situacion.
+
+                    </p>
+                </div>
+                <div>
+                    <img src="/fotos/producto.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
