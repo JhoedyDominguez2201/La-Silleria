@@ -1,9 +1,9 @@
 [
     {
         "foto": "/fotos/product1.jpg",
-        "foto2": "/fotos/product2.jpg",
         "nombre": "Silla azul",
-        "precio": "$200"
+        "precio": "$200",
+        "descripcion": "Silla color azul shalalala"
     },
     {
         "foto": "/fotos/product2.jpg",

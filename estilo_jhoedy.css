@@ -5,9 +5,17 @@
   background-color: #ffe1a9;
   font-size: 20px;
 }
-.nav-link{
-color: #000000;}
+.collapse .btn{
+margin-left: 0px;
+width: 80px;
+height: 40px;
+}
+.collapse .form-control{
+  margin-left: 220px;
+
+} 
 /*FINAL HEADER*/
+
 
 /*CARRUSEL*/
 .carousel-inner{
@@ -47,6 +55,11 @@ color: #000000;}
   #contact .logo{
     width: 190px;
     height: 150px;
+  }
+
+  .row .col-md-6{
+    margin-top: 10px;
+    
   }
   
   @media (max-width: 575.98px) {
@@ -90,6 +103,8 @@ color: #000000;}
   }
   /*FINAL CONTACTANOS*/
 
+
+
 /*Catalogo*/
 .card{
   margin-top: 8px;
@@ -98,23 +113,25 @@ color: #000000;}
 }
 .card-title{
   font-family: 'Fraunces', serif;
-
   text-align: center;
-
 }
 .card-text{
-          font-family: 'Fraunces', serif;
+  font-family: 'Fraunces', serif;
   color: #535353;
   text-align: center;
 }
-
 .btn{
   margin-left: 35%;
 }
-
 .img-producto{
   width: 250px;
   height: 250px;
   margin-left: 8px;
   margin-top: 8px;
 }
+
+#divcard{
+  height: 100%;
+  width: 100%;
+}
+
