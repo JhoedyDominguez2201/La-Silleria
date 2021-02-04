@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo -->
-    <title>Inicio de sesión</title>
-    <!-- JS y CSS -->
-    <script type="text/javascript" src="iniciarsesion.js"></script>
-    <link rel="stylesheet" href="estilo_sheila.css">
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-       
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Inicio de sesión</title>
+  <!-- JS y CSS -->
+  <script type="text/javascript" src="iniciarsesion.js"></script>
+  <link rel="stylesheet" href="estilo_sheila.css">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
 </head>
+
 <body>
-    <!--HEADER  -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <!--HEADER  -->
+  <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-  
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Catalogo</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Catalogo</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Productos</a>
             <a class="dropdown-item" href="#">Sillas</a>
@@ -44,28 +52,59 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Nosotros</a>
         </li>
-       </ul>
-        <a class="nav-link" href="/iniciarsesion.html">Iniciar sesion</a>
-        <a class="nav-link" href="/crearcuenta.html">Crear cuenta</a>   
+      </ul>
+      <a class="nav-link" href="/iniciarsesion.html">Iniciar sesion</a>
+      <a class="nav-link" href="/crearcuenta.html">Crear cuenta</a>
     </div>
-   </nav>
+  </nav>
 
-    <!-- Creación del formulario -->
-    <div class="container">
-        <img class="logo" src="/Imagenes/Logo.jpeg">
-        <h3>Iniciar Sesion</h3>
-        <form>
-            <div class="form-group col-md-5">
-                <label for="email">Correo electronico</label>
-                <input type="email" class="form-control" id="emailSesion" placeholder="Correo electronico">
-            </div>
-            <br>
-            <div class="form-group col-md-5">
-                <label for="inputAddress">Contraseña</label>
-                <input type="password" class="form-control" id="contraseñaSesion" placeholder="Contraseña">
-            </div>
-            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-        </form>
-    </div>   
+  <!-- Creación del formulario -->
+  <div class="container">
+    <img class="logo" src="/Imagenes/Logo.jpeg">
+    <h3>Iniciar Sesion</h3>
+    <form>
+      <div class="form-group2 col-md-5">
+        <label for="email">Correo electronico</label>
+        <input type="email" class="form-control" id="emailSesion" placeholder="Correo electronico">
+      </div>
+      <br>
+      <div class="form-group2 col-md-5">
+        <label for="inputAddress">Contraseña</label>
+        <input type="password" class="form-control" id="contraseñaSesion" placeholder="Contraseña">
+      </div>
+      <button type="button" onclick="prueba()" class="btn btn-primary">Iniciar Sesión</button>
+    </form>
+
+  </div>
+  <script>
+    function prueba() {
+      //Obtiene datos de inputs
+      const email = document.getElementById('emailSesion');
+      const contraseña = document.getElementById('contraseñaSesion');
+
+      //Esta vacio
+      if (email.value == "" && contraseña.value == "") {
+        console.log("Prueba");
+      }else{
+        //
+      var guardado = localStorage.getItem('datos');
+      console.log('objetoObtenido: ', JSON.parse(guardado));
+      //Guarda localStorage en variable
+      var datos = JSON.parse(guardado);
+
+      var emailFin= datos[0].Email;
+      var contraseñaFinal =datos[0].contraseña;
+      
+      var emailFin= datos[0].Email;
+      var contraseñaFinal =datos[0].contraseña;
+
+        if(emailFin==email.value && contraseñaFinal==contraseña.value){
+          console.log("Bien :)");
+        }
+      }
+    
+    }
+  </script>
 </body>
-</html>     
+
+</html>
