@@ -1,24 +1,26 @@
-
+//
 window.onload = obtenerdatos();
 
-
+//Función para obtener los datos del JSON
 function obtenerdatos() {
-    var queryDict = {}
-    queryDict = location.search.substring(1).split("&");
-    id = parseInt(queryDict[0]);
+    //Convertir a tipo Int
+    var id = parseInt(location.search.substring(1));
     console.log(id);
 
+    //Creacion de variable tipo XMLHttpRequest
     const xhttp = new XMLHttpRequest();
 
+    //Creación de petición
     xhttp.open('GET', 'productos.json', true);
     xhttp.send();
     xhttp.onload = function () {
+        //Validar que sea correcta la petición
         if (xhttp.readyState === 4 && xhttp.status === 200) {
+            //Convertir a un tipo compresible para javascript 
             var datos = JSON.parse(xhttp.responseText);
 
             var divSillas = document.getElementById("divSillas");
-
-            //Primer div
+            //(imagen)
             var productcontent = document.createElement("div");
             productcontent.setAttribute("class", "product-content product-wrap clearfix product-deatil");
             divSillas.appendChild(productcontent);
@@ -40,8 +42,7 @@ function obtenerdatos() {
             img.setAttribute("class", "card-img-top");
             productImage.appendChild(img);
 
-
-            //segundo div
+            //(Texto)
 
             var col2 = document.createElement("div");
             col2.setAttribute("class", "col-md-6 col-md-offset-1 col-sm-12 col-xs-12");
@@ -69,8 +70,8 @@ function obtenerdatos() {
             h4.setAttribute("class", "h4descripcion");
             var subtitulo = document.createTextNode("Descripcion:");
             h4.appendChild(subtitulo);
-            col2.appendChild(h4);
 
+            col2.appendChild(h4);
 
             var p = document.createElement("p");
             p.setAttribute("class", "pdescripcion");

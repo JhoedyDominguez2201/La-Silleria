@@ -26,35 +26,39 @@
 </head>
 
 <body>
-  <!--HEADER  -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
+  <!--HEADER-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navb">
+    <a class="navbar-brand" href="home.html">LA SILLERIA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Catalogo</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Productos</a>
-            <a class="dropdown-item" href="#">Sillas</a>
-            <a class="dropdown-item" href="#">Mesas</a>
-            <a class="dropdown-item" href="#">Camas</a>
+            <a class="dropdown-item" href="catalogo.html">Sillas</a>
+            <a class="dropdown-item" href="catalogoMesas.html">Mesas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contactanos.html">Contactanos</a>
+          <a class="nav-link" href="contactanos.html">Contactanos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="iniciarsesion.html">Iniciar sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
         </li>
       </ul>
-      <a class="nav-link" href="/iniciarsesion.html">Iniciar sesion</a>
-      <a class="nav-link" href="/crearcuenta.html">Crear cuenta</a>
     </div>
   </nav>
 
@@ -72,39 +76,37 @@
         <label for="inputAddress">Contraseña</label>
         <input type="password" class="form-control" id="contraseñaSesion" placeholder="Contraseña">
       </div>
-      <button type="button" onclick="prueba()" class="btn btn-primary">Iniciar Sesión</button>
+      <button id = "iniciarSesion" type="button" onclick="inicioSesion()" class="btn btn-primary">Iniciar Sesión</button>
     </form>
 
   </div>
-  <script>
-    function prueba() {
-      //Obtiene datos de inputs
-      const email = document.getElementById('emailSesion');
-      const contraseña = document.getElementById('contraseñaSesion');
+  <script></script>
 
-      //Esta vacio
-      if (email.value == "" && contraseña.value == "") {
-        console.log("Prueba");
-      }else{
-        //
-      var guardado = localStorage.getItem('datos');
-      console.log('objetoObtenido: ', JSON.parse(guardado));
-      //Guarda localStorage en variable
-      var datos = JSON.parse(guardado);
+  <!--FOOTER-->
+  <div class="bg-navbar text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
 
-      var emailFin= datos[0].Email;
-      var contraseñaFinal =datos[0].contraseña;
-      
-      var emailFin= datos[0].Email;
-      var contraseñaFinal =datos[0].contraseña;
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">SIEMPRE</h5>
+          <p>
+            Inspirate con nuestras hermosas piezas para crear espacios increibles, elige tu color perfecto,
+            elige tu silla perfecta, elige con estilo, enviamos a cualquier parte del estado
+          </p>
+        </div>
 
-        if(emailFin==email.value && contraseñaFinal==contraseña.value){
-          console.log("Bien :)");
-        }
-      }
-    
-    }
-  </script>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">CONTIGO</h5>
+          <p>
+            Este mes cumplimos 4 años gracias a ti. Cuatro añitos que han pasado volando y aspiramos a cumplir muchos
+            más.
+            A nuestros Clientes, a nuestro Equipo, a nuestras Familias. Gracias, gracias, gracias
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--FINAL FOOTER-->
 </body>
 
 </html>

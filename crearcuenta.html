@@ -1,157 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo -->
-    <title>Registrarse</title>
-    <!-- JS y CSS -->
-    
-    <link rel="stylesheet" href="estilo_sheila.css">
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!--HEADER  -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
-    
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button" aria-haspopup="true" aria-expanded="false">Catalogo</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="catalogo.html">Productos</a>
-                <a class="dropdown-item" href="#">Sillas</a>
-                <a class="dropdown-item" href="#">Mesas</a>
-                <a class="dropdown-item" href="#">Camas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contactanos.html">Contactanos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-           </ul>
-            <a class="nav-link" href="/iniciarsesion.html">Iniciar sesion</a>
-            <a class="nav-link" href="/crearcuenta.html">Crear cuenta</a>   
-        </div>
-    </nav>
 
-    <!-- CONSIDERAR A PONER O NO POR ESTETICA 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Registrarse</title>
+  <!-- JS y CSS -->
+
+  <link rel="stylesheet" href="estilo_sheila.css">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navb">
+    <a class="navbar-brand" href="home.html">LA SILLERIA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Catalogo</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="catalogo.html">Sillas</a>
+            <a class="dropdown-item" href="catalogoMesas.html">Mesas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactanos.html">Contactanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="iniciarsesion.html">Iniciar sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONSIDERAR A PONER O NO POR ESTETICA 
     <div class="sidebar">
       <h5>¡Nuevos diseños!</h5>
       <img src="Imagenes/Publicidad.jpeg" class="publicidad" alt="">
     </div>
     -->
 
-    <!--Formulario de registrarse  -->
-    <div class="container"> 
-        <img class="logo" src="/Imagenes/Logo.jpeg">
-        <h3>Registrarse</h3>
-        <form id="form">
-            <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="apellidoPaterno">Apellido Paterno</label>
-                <input type="text" class="form-control" id="apellidoPaterno" placeholder="Apellido Paterno" required>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="apellidoMaterno">Apellido Materno</label>
-                <input type="text" class="form-control" id="apellidoMaterno" placeholder="Apellido Materno" required>
-              </div>
-            </div>
+  <!--Formulario de registrarse  -->
+  <div class="container">
+    <img class="logo" src="/Imagenes/Logo.jpeg">
+    <h3>Registrarse</h3>
+    <form id="form" class="form">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="apellidoPaterno">Apellido Paterno</label>
+          <input type="text" class="form-control" id="apellidoPaterno" placeholder="Apellido Paterno" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="apellidoMaterno">Apellido Materno</label>
+          <input type="text" class="form-control" id="apellidoMaterno" placeholder="Apellido Materno" required>
+        </div>
+      </div>
 
-            <div class="form-group">
-              <label for="callePrincipal">Calle principal</label>
-              <input type="text" class="form-control" id="callePrincipal" placeholder="Calle Principal" required>
-            </div>
-            <div class="form-group">
-              <label for="Cruzamiento">Cruzamiento</label>
-              <input type="text" class="form-control" id="Cruzamiento" placeholder="Cruzamiento" required>
-            </div>
-            <div class="form-group">
-                <label for="Colonia">Colonia</label>
-                <select id="Colonia" class="form-control" required>
-                  <option selected>Seleccionar</option>
-                  <option>Fraccionamiento Villas Oxtankah</option>
-                  <option>Proterritorio</option>
-                  <option>Pacto Obrero</option>
-                  <option>Forjadores</option>
-                  <option>David Gutierrez Ruiz</option>
-                  <option>Centro</option>
-                  <option>Arboledas</option>
-                  <option>Americas 1</option>
-                  <option>Solidaridad</option>
-                  <option>Centenario</option>
-                  <option>Fovisste 4 Etapa</option>
-                </select>
-            </div>
-           
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="Municipio">Municipio</label>
-                <select id="Municipio" class="form-control" required>
-                  <option selected>Seleccionar</option>
-                  <option>Othon P. Blanco</option>
-                  <option>Felipe Carrillo Puerto</option>
-                  <option>Solidaridad/option>
-                  <option>José María Morelos</option>
-                  <option>Isla Mujeres</option>
-                  <option>Bacalar</option>
-                  <option>Cozumel</option>
-                  <option>Tulum</option>
-                  <option>Benito Juárez</option>
-                  <option>Puerto Morelos</option>
-                  <option>Lázaro Cárdenas</option>
-                </select>
-              </div>
-              <div class="form-group col-md-3">
-                <label for="codigoPostal">Codigo Postal</label>
-                <input type="text" class="form-control" id="codigoPostal" placeholder="Codigo Postal" required>
-              </div>
-              <div class="form-group col-md-3">
-                <label for="Telefono">Telefono</label>
-                <input type="tel" class="form-control" id="Telefono" placeholder="Telefono" required>
-              </div>
-            </div>
+      <div class="form-group">
+        <label for="callePrincipal">Calle principal</label>
+        <input type="text" class="form-control" id="callePrincipal" placeholder="Calle Principal" required>
+      </div>
+      <div class="form-group">
+        <label for="Cruzamiento">Cruzamiento</label>
+        <input type="text" class="form-control" id="Cruzamiento" placeholder="Cruzamiento" required>
+      </div>
+      <div class="form-group">
+        <label for="Colonia">Colonia</label>
+        <select id="Colonia" class="form-control" required>
+          <option selected>Seleccionar</option>
+          <option>Fraccionamiento Villas Oxtankah</option>
+          <option>Proterritorio</option>
+          <option>Pacto Obrero</option>
+          <option>Forjadores</option>
+          <option>David Gutierrez Ruiz</option>
+          <option>Centro</option>
+          <option>Arboledas</option>
+          <option>Americas 1</option>
+          <option>Solidaridad</option>
+          <option>Centenario</option>
+          <option>Fovisste 4 Etapa</option>
+        </select>
+      </div>
 
-            <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="email">Correo electronico</label>
-                <input type="email" class="form-control" id="email" placeholder="Correo electronico" required>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="Contraseña">Contraseña</label>
-                <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña" required>
-              </div>
-              <div class="form-group col-md-4">
-                  <label for="confirmarContraseña">Confirmar Contraseña</label>
-                <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirmar Contraseña" required>
-              </div>
-            </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="Municipio">Municipio</label>
+          <select id="Municipio" class="form-control" required>
+            <option selected>Seleccionar</option>
+            <option>Othon P. Blanco</option>
+            <option>Felipe Carrillo Puerto</option>
+            <option>Solidaridad</option>
+            <option>José María Morelos</option>
+            <option>Isla Mujeres</option>
+            <option>Bacalar</option>
+            <option>Cozumel</option>
+            <option>Tulum</option>
+            <option>Benito Juárez</option>
+            <option>Puerto Morelos</option>
+            <option>Lázaro Cárdenas</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="codigoPostal">Codigo Postal</label>
+          <input type="text" class="form-control" id="codigoPostal" placeholder="Codigo Postal" required>
+          <p id="errorCodPostal"></p>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="Telefono">Telefono</label>
+          <input type="tel" class="form-control" id="Telefono" placeholder="Telefono" required>
+          <p id="errorTel"></p>
+        </div>
+      </div>
 
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                <label class="form-check-label" for="gridCheck">Acepto terminos y condiciones</label>
-              </div>
-            </div>
-            <button id="Registro" type="button" onclick="prueba()" class="btn btn-primary">Registrarse</button>
-          </form>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="email">Correo electronico</label>
+          <input type="email" class="form-control" id="email" placeholder="Correo electronico" required>
+          <p id="errorEmail"></p>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="Contraseña">Contraseña</label>
+          <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña" required>
+          <p id="errorContraseña"></p>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="confirmarContraseña">Confirmar Contraseña</label>
+          <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirmar Contraseña"
+            required>
+          <p id="errorConfcontraseña"></p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">Acepto terminos y condiciones</label>
+        </div>
+      </div>
+      <button id="Registro" type="button" onclick="validar()" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+  <!-- 
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+  </div>
+  -->
+  <!--FOOTER-->
+  <div class="bg-navbar text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">SIEMPRE</h5>
+          <p>
+            Inspirate con nuestras hermosas piezas para crear espacios increibles, elige tu color perfecto,
+            elige tu silla perfecta, elige con estilo, enviamos a cualquier parte del estado
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">CONTIGO</h5>
+          <p>
+            Este mes cumplimos 4 años gracias a ti. Cuatro añitos que han pasado volando y aspiramos a cumplir muchos
+            más.
+            A nuestros Clientes, a nuestro Equipo, a nuestras Familias. Gracias, gracias, gracias
+          </p>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="crearcuenta.js"></script>
+  </div>
+    <!--FINAL FOOTER-->
+
+  <script type="text/javascript" src="crearcuenta.js"></script>
 </body>
+
 </html>
