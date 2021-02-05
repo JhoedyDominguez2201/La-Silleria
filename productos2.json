@@ -1,55 +1,72 @@
 [
     {
-        "foto": "/fotos/product1.jpg",
-        "foto2": "/fotos/product2.jpg",
-        "nombre": "Mesa azul",
+        "foto": "/fotos/silla1.jpg",
+        "nombre": "Silla verde",
         "precio": "$200",
-        "descripcion": "kjsdbfjksdbfjksdf"
+        "descripcion": "Silla color verde hecha a mano"
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla verde",
-        "precio": "$50"
+        "foto": "/fotos/silla2.jpg",
+        "nombre": "Silla Colores",
+        "precio": "$50",
+        "descripcion": "Silla de colores hecha a mano"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla roja",
-        "precio": "$800"
+        "foto": "/fotos/silla3.jpg",
+        "nombre": "Silla blanca con negro",
+        "precio": "$800",
+        "descripcion": "Silla para jardin blanco y negro"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla naranja",
-        "precio": "$500"
+        "foto": "/fotos/silla4.jpg",
+        "nombre": "Silla mesedora",
+        "precio": "$500",
+        "descripcion": "Mesedora color azul para jardin"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
+        "foto": "/fotos/silla5.jpg",
+        "nombre": "Silla blanca ",
+        "precio": "$100",
+        "descripcion": "Silla blanca hecha a mano para terraza"
+
+    },
+    {
+        "foto": "/fotos/silla6.jpg",
         "nombre": "Silla gris",
-        "precio": "$100"
+        "precio": "$300",
+        "descripcion": "Silla color gris hecha a mano"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla blanca",
-        "precio": "$300"
+        "foto": "/fotos/silla7.jpg",
+        "nombre": "Silla tipo sofa",
+        "precio": "$3200",
+        "descripcion": "Silla tipo sofa elegante para sala de estar"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla rosada",
-        "precio": "$3200"
-    },
-    {
-        "foto": "/fotos/product2.jpg",
-        "nombre": "Silla verde",
-        "precio": "$50"
-    },
-    {
-        "foto": "/fotos/product3.jpg",
-        "nombre": "Silla roja",
-        "precio": "$800"
-    },
-    {
-        "foto": "/fotos/product4.jpg",
+        "foto": "/fotos/silla8.jpg",
         "nombre": "Silla naranja",
-        "precio": "$500"
+        "precio": "$50",
+        "descripcion": "Silla color naranja hecha a mano"
+
+    },
+    {
+        "foto": "/fotos/silla9.jpg",
+        "nombre": "Silla rosa",
+        "precio": "$800",
+        "descripcion": "Silla para jardin color rosa"
+
+    },
+    {
+        "foto": "/fotos/silla10.jpg",
+        "nombre": "Silla azul",
+        "precio": "$500",
+        "descripcion": "Silla color azul ideal para niños"
+
     }
 
 ]

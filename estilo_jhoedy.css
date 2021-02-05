@@ -15,7 +15,11 @@ height: 40px;
 
 } 
 /*FINAL HEADER*/
-
+.bienvenida{
+  font-family: 'Cinzel', serif;
+  margin-top: 30px;
+  text-align: center;
+}
 
 /*CARRUSEL*/
 .carousel-inner{
@@ -27,20 +31,26 @@ height: 40px;
 }
 /*FINAL CARRUSEL*/
 
+.texto{
+  font-family: 'Cinzel', serif;
+  margin-top: 30px;
+  text-align: center;
+}
+
 /*FOOTER*/
 .bg-navbar{
-  margin-top: 50px;
-  background-color: #ffe1a9;
+  font-family: 'Fraunces', serif;  
+  margin-top: 150px;
+  background-color: hsl(39, 100%, 83%);
 }
 /*FINAL FOOTER*/
 
 
 
-/*CONTACTANOS CON MEDIA QUERYS*/
+/*CONTACTANOS */
 
   #contact{
-    font-family: 'Cinzel', serif;
-    }
+    font-family: 'Fraunces', serif;    }
   
     #contact p{
       margin-top: 20px;
@@ -101,6 +111,7 @@ height: 40px;
        height: 750px;
      }
   }
+  
   /*FINAL CONTACTANOS*/
 
 
@@ -135,3 +146,8 @@ height: 40px;
   width: 100%;
 }
 
+
+/*Color de fondo de la SweetAlert*/
+.swal-overlay {
+  background-color: rgba(0, 0, 0, 0.712);
+}

@@ -1,54 +1,71 @@
 [
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla azul",
+        "foto": "/fotos/mesa1.jpg",
+        "nombre": "Mesa redonda",
         "precio": "$200",
-        "descripcion": "Silla color azul shalalala"
+        "descripcion": "Mesa de madera redonda"
     },
     {
-        "foto": "/fotos/product2.jpg",
-        "nombre": "Silla verde",
-        "precio": "$50"
+        "foto": "/fotos/mesa2.jpg",
+        "nombre": "Mesa de estar",
+        "precio": "$50",
+        "descripcion": "Mesa de madera"
+
     },
     {
-        "foto": "/fotos/product3.jpg",
-        "nombre": "Silla roja",
-        "precio": "$800"
+        "foto": "/fotos/mesa3.jpg",
+        "nombre": "Mesa de jardin",
+        "precio": "$800",
+        "descripcion": "Mesa de caoba"
+
     },
     {
-        "foto": "/fotos/product4.jpg",
-        "nombre": "Silla naranja",
-        "precio": "$500"
+        "foto": "/fotos/mesa4.jpg",
+        "nombre": "Mesa comedor",
+        "precio": "$500",
+        "descripcion": "Mesa de elegante para comedor"
+
     },
     {
-        "foto": "/fotos/product5.jpg",
-        "nombre": "Silla gris",
-        "precio": "$100"
+        "foto": "/fotos/mesa5.jpg",
+        "nombre": "Mesa cafe",
+        "precio": "$100",
+        "descripcion": "Mesa de nmadera de pino"
+
     },
     {
-        "foto": "/fotos/product6.jpg",
-        "nombre": "Silla blanca",
-        "precio": "$300"
+        "foto": "/fotos/mesa6.jpg",
+        "nombre": "Mesa rustica",
+        "precio": "$300",
+        "descripcion": "Mesa de madera de tronco"
+
     },
     {
-        "foto": "/fotos/product1.jpg",
-        "nombre": "Silla rosada",
-        "precio": "$3200"
+        "foto": "/fotos/mesa7.jpg",
+        "nombre": "Mesa para piscina ",
+        "precio": "$3200",
+        "descripcion": "Mesas para la piscina"
+
     },
     {
-        "foto": "/fotos/product2.jpg",
-        "nombre": "Silla verde",
-        "precio": "$50"
+        "foto": "/fotos/mesa8.jpg",
+        "nombre": "Mesa comedor madera",
+        "precio": "$50",
+        "descripcion": "Mesa comedor para casa en la playa"
+
     },
     {
-        "foto": "/fotos/product3.jpg",
-        "nombre": "Silla roja",
-        "precio": "$800"
+        "foto": "/fotos/mesa9.jpg",
+        "nombre": "Mesa desayunador",
+        "precio": "$800",
+        "descripcion": "Mesa para desayunar "
+
     },
     {
-        "foto": "/fotos/product4.jpg",
-        "nombre": "Silla naranja",
-        "precio": "$500"
+        "foto": "/fotos/mesa10.jpg",
+        "nombre": "Mesa larga",
+        "precio": "$500",
+        "descripcion": "Mesa de madera larga"
     }
 
 ]
