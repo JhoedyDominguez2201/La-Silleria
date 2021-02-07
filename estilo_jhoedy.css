@@ -1,4 +1,5 @@
 
+
 /*HEADER*/
 .navbar{
   font-family: 'Cinzel', serif;
@@ -30,7 +31,6 @@ height: 40px;
     height: 600px;
 }
 /*FINAL CARRUSEL*/
-
 .texto{
   font-family: 'Cinzel', serif;
   margin-top: 30px;
@@ -47,7 +47,7 @@ height: 40px;
 
 
 
-/*CONTACTANOS */
+/*CONTACTANOS CON MEDIA QUERYS*/
 
   #contact{
     font-family: 'Fraunces', serif;    }
@@ -111,7 +111,6 @@ height: 40px;
        height: 750px;
      }
   }
-  
   /*FINAL CONTACTANOS*/
 
 
@@ -150,4 +149,28 @@ height: 40px;
 /*Color de fondo de la SweetAlert*/
 .swal-overlay {
   background-color: rgba(0, 0, 0, 0.712);
+}
+
+.divdiv .btn{
+  margin-top: 100px;
+  margin-left:46% ;
+}
+
+#btnModificar{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.container{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container .btn{
+  margin-left: 46%;
+}
+
+.containerbtn{
+  margin-top: 50px;
+  margin-left: 19%;
 }

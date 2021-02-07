@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La silleria</title>
-  <link rel="stylesheet" href="estilo_jhoedy.css">
-  <!--Referencia a Bootstrap 4.5-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -18,14 +16,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <!--Referencia a Js-->
-  <script type="text/javascript" src="lasilleria.js"></script>
-</head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <link rel="stylesheet" href="estilo_jhoedy.css">
+    <script type="text/javascript" src="lasilleria.js""></script>
 
-<body onload="traerdatos();">
+</head>
+<body onload="obtenerdatos();">
+
   <!--HEADER-->
-  <nav class=" navbar navbar-expand-lg navbar-light" id="navb">
-    <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
+  <nav class="navbar navbar-expand-lg navbar-light" id="navb">
+    <a class="navbar-brand" href="home.html">LA SILLERIA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,7 +41,7 @@
             <a class="dropdown-item" href="catalogoMesas.html">Mesas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contactanos.html">Contactanos</a>
+          <a class="nav-link" href="contactanos.html">Contactanos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -58,19 +59,33 @@
       </ul>
     </div>
   </nav>
-  <!-- FINAL HEADER-->
-
-  <!--Contenido-->
-  <div class="row row-cols-5 gy-2" id="divcard"></div>
-
-  <div class="divdiv">
-    <a class="btn btn-info" id="btndanger" href="modificar.html" >Editar</a>
+  <!--FINAL HEADER-->
+  <div class="container" id="divcard2">
+    <label for="">SRC de la foto</label>
+    <input type="text" class="form-control" id="infoto" placeholder="SRC de la foto">
+    <br>
+    <label for="">Nombre del producto</label>
+    <input type="text" class="form-control"id="innombre" placeholder="Nombre del producto">
+    <br>
+    <label for="">Precio del producto</label>
+    <input type="text" class="form-control"id="inprecio" placeholder="Precio del producto">
+    <br>
+    <label for="">Descripcion del producto</label>
+    <input type="text"class="form-control" id="indesc" placeholder="Descripcion ">
+    <br>
+    <button class="btn btn-primary" id=""  onclick="crearproducto()">Agregar</button>
   </div>
 
-  <!--Final contenido-->
+  <div class="row row-cols-5 gy-2" id="divcard">
 
+  </div>
 
-  <!--FOOTER-->
+  
+  <div class="containerbtn">
+    <button class="btn btn-danger" onclick="Reset()">Resetear</button>
+  </div>
+
+<!--FOOTER-->
   <div class="bg-navbar text-center text-lg-start">
     <div class="container p-4">
       <div class="row">
@@ -97,5 +112,4 @@
   <!--FINAL FOOTER-->
 
 </body>
-
 </html>
