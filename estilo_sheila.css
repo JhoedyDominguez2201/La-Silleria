@@ -89,7 +89,70 @@ h3 {
 
 /*FOOTER*/
 .bg-navbar{
-  margin-top: 50px;
-  background-color: #ffe1a9;
+  font-family: 'Fraunces', serif;  
+  margin-top: 150px;
+  background-color: hsl(39, 100%, 83%);
 }
 /*FINAL FOOTER*/
+
+.divPrincipal{
+  margin: auto;
+  width: 60%;
+  border: 2px solid #a0a0a0;
+  border-radius: 3%;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.margen{
+  margin-left:360px;
+  margin-top: 10px;
+}
+.margen2{
+  margin-top: 10px;
+  margin-left: 240px;
+}
+
+.margen3{
+  margin-top: 10px;
+}
+
+.card-img-top{
+  height: 550px;
+  width: 50px;
+}
+
+.product-content{
+margin-top: 50px;
+margin-left: 200px;
+}
+
+.row .col-sm-12 .btn {
+  margin-left: 0px;
+} 
+
+.col-sm-12 .col-md-6{
+  font-family: 'Fraunces', serif;
+  margin-top: 100px;
+}
+.pdescripcion{
+  margin-top: 15px;
+  font-size: 20px;
+  
+}
+.h4descripcion{
+  font-weight: bold;
+}
+
+.price-container{
+  text-align: start;
+}
+
+
+
+#divIniciarSesion{
+  font-family: 'Fraunces', serif;
+
+  margin-top: 50px;
+}
+
