@@ -9,7 +9,7 @@ function obtenerdatos() {
 
     const xhttp = new XMLHttpRequest();
 
-    xhttp.open('GET', 'productos2.json', true);
+    xhttp.open('GET', 'productos.json', true);
     xhttp.send();
     xhttp.onload = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {

@@ -19,38 +19,49 @@
     <script type="text/javascript" src="compra.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 </head>
 
 <body>
 
-    <nav class=" navbar navbar-expand-lg navbar-light" id="navb">
-        <a class="navbar-brand" href="home.html">LA SILLERIA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Catalogo</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="catalogo.html">Sillas</a>
-                        <a class="dropdown-item" href="catalogo2.html">Mesas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contactanos.html">Contactanos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-            <a class="nav-link" href="iniciarsesion.html">Iniciar sesion</a>
-            <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
-        </div>
-    </nav>
-    <br>
+    
+  <nav class=" navbar navbar-expand-lg navbar-light" id="navb">
+    <a class="navbar-brand" href="/home.html">LA SILLERIA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Catalogo</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="catalogo.html">Sillas</a>
+            <a class="dropdown-item" href="catalogoMesas.html">Mesas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contactanos.html">Contactanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="iniciarsesion.html">Iniciar sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crearcuenta.html">Crear cuenta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FINAL HEADER-->
 
 
     <div class="col-sm-12 col-md-12 col-lg-12" id="mesas" style="background-color: #ffe1a9;">
@@ -65,17 +76,34 @@
             </div>
             <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-16" id="col2">
                 <br>
-                <input type="text"  id="tarjeta" placeholder="numero de tarjeta" maxlength="16">
+                <input class="comprobar" type="text"  id="tarjeta" placeholder="numero de tarjeta" maxlength="16">
                 <input type="text"  id="nombres" placeholder="juan ramos">
-                <input type="text"  id="mes" placeholder="5">
+                <input type="text"  id="mes" placeholder="5" maxlength="2">
                 <input type="text"  id="año" placeholder="2010" maxlength="4">
                 <input type="text"  id="CVV" placeholder="ingresa tu cvv" maxlength="3">
-                <input type="submit" value="comprobar datos" class="btn btn-primary" id="boton"> 
+                <input type="submit" value="comprobar datos" class="btn btn-primary float-right "id="boton"> 
             </div>
         </div>
+    
     </div>
-
-
+    <br>
+    <div style="text-align: center;">
+    <input type="submit" value="MOSTRAR TARJETA" class="btn btn-primary" id="boton2"> 
+    
+    </div>
+    <div id="listatarjetas" class="container mt-5" style="background-color: #ffe1a9;">
+        <!--<div class="alert alert-primary" role="alert" id="div1">
+            <i class="material-icons float-left mr-3" id="i1">
+                credit_card
+            </i>
+                <b id="tarjname">tarjeta</b>
+                <span class="float-right" id="span1">
+                    <i class="material-icons float-left mr-3" id="i2">
+                        deleted
+                    </i>
+                </span>
+        </div>-->
+    </div>
 </body>
 
 </html>
